@@ -3,7 +3,30 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <p>Copyright &copy; <a href="{{ site.url }}">{{ site.url }}</a></p>
+        <ul id="social-links" class="list-inline text-center">
+          {% if site.twitter_username %}
+          <li class="list-inline-item">
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.github_username %}
+          <li class="list-inline-item">
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <p id="copyright" class="text-muted">Copyright &copy; <a href="{{ site.url }}">{{ site.url }}</a></p>
       </div>
     </div>
   </div>
