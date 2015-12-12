@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-<article class="post">
+<main id="main" role="main">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  {% include page-header-default.html %}
 
-  <div class="post-content">
-    {{ content }}
+  <div id="content" class="container">
+
+    <article class="post">
+      {{ content }}
+    </article>
+
   </div>
 
-</article>
+</main>
