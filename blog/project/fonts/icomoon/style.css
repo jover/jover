@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'font-awesome';
-	src:url('fonts/font-awesome.eot?60bw92');
-	src:url('fonts/font-awesome.eot?60bw92#iefix') format('embedded-opentype'),
-		url('fonts/font-awesome.ttf?60bw92') format('truetype'),
-		url('fonts/font-awesome.woff?60bw92') format('woff'),
-		url('fonts/font-awesome.svg?60bw92#font-awesome') format('svg');
+	src:url('fonts/font-awesome.eot?xjql1p');
+	src:url('fonts/font-awesome.eot?xjql1p#iefix') format('embedded-opentype'),
+		url('fonts/font-awesome.ttf?xjql1p') format('truetype'),
+		url('fonts/font-awesome.woff?xjql1p') format('woff'),
+		url('fonts/font-awesome.svg?xjql1p#font-awesome') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -38,6 +38,12 @@
 }
 .fa-github:before {
 	content: "\f09b";
+}
+.fa-feed:before {
+	content: "\f09e";
+}
+.fa-rss:before {
+	content: "\f09e";
 }
 .fa-linkedin:before {
 	content: "\f0e1";
