@@ -1,24 +1,33 @@
-<header role="banner">
+<header id="header" role="banner">
 
-  <div class="container">
-    <nav class="navbar" role="navigation">
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      <ul class="nav navbar-nav">
-        {% assign pages_sorted = site.pages | sort: 'weight' %}
-        {% for p in pages_sorted %}
-          {% if page.url == p.url %}
-            {% assign active = true %}
-          {% else %}
-            {% assign active = false %}
-          {% endif %}
-          {% if p.title %}
-            <li class="nav-item{% if active == true %} active{% endif %}">
-              <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}{% if active == true %} <span class="sr-only">(current)</span>{% endif %}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
+  <nav class="navbar" role="navigation">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <ul class="nav navbar-nav pull-xs-right">
+      {% assign pages_sorted = site.pages | sort: 'weight' %}
+      {% for p in pages_sorted %}
+        {% if page.url == p.url %}
+          {% assign active = true %}
+        {% else %}
+          {% assign active = false %}
+        {% endif %}
+        {% if p.title %}
+          <li class="nav-item{% if active == true %} active{% endif %}">
+            <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}{% if active == true %} <span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div id="page-heading" class="container">
+    <div class="row">
+      {% if page.title %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
+      {% if page.subtitle %}
+        <h2>{{ page.subtitle }}</h2>
+      {% endif %}
+    </div>
   </div>
 
 </header>
