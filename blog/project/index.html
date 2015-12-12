@@ -3,23 +3,16 @@ layout: page
 title: Home
 weight: 0
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<ul class="post-list list-unstyled">
+  {% for post in site.posts %}
+    <li>
+      <article class="post post-teaser">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <h2>{{ post.title }}</h2>
+          <p class="date"><i class="fa fa-calendar"></i><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+          <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+        </a>
+      </article>
+    </li>
+  {% endfor %}
+</ul>

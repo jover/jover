@@ -28,3 +28,6 @@ timezone: "Europe/Brussels"
 
 # Encoding
 encoding: "UTF-8"
+
+# Excerpt separator
+excerpt_separator: <!--more-->
