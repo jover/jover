@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
 	font-family: 'font-awesome';
 	src:url('fonts/font-awesome.eot?60bw92');
@@ -24,25 +26,39 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.fa-tag:before {
-	content: "\f02b";
+.fa-tag {
+	&:before {
+		content: $fa-tag;
+	}
 }
-.fa-tags:before {
-	content: "\f02c";
+.fa-tags {
+	&:before {
+		content: $fa-tags;
+	}
 }
-.fa-calendar:before {
-	content: "\f073";
+.fa-calendar {
+	&:before {
+		content: $fa-calendar;
+	}
 }
-.fa-twitter:before {
-	content: "\f099";
+.fa-twitter {
+	&:before {
+		content: $fa-twitter;
+	}
 }
-.fa-github:before {
-	content: "\f09b";
+.fa-github {
+	&:before {
+		content: $fa-github;
+	}
 }
-.fa-linkedin:before {
-	content: "\f0e1";
+.fa-linkedin {
+	&:before {
+		content: $fa-linkedin;
+	}
 }
-.fa-drupal:before {
-	content: "\f1a9";
+.fa-drupal {
+	&:before {
+		content: $fa-drupal;
+	}
 }
 

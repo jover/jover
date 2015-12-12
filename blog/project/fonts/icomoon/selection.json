@@ -211,7 +211,8 @@
 			"showMetadata": true,
 			"showVersion": true,
 			"cssVars": true,
-			"selector": "i"
+			"selector": "class",
+			"classSelector": ".fa"
 		},
 		"imagePref": {
 			"prefix": "icon-",
