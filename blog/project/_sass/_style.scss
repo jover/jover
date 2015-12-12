@@ -1,21 +1,72 @@
 @import "bootstrap-overrides";
 @import "bootstrap";
 
-#header {
-  background: gray;
+@import "../fonts/icomoon/style.css";
+
+#navigation {
+  a {
+    text-transform: uppercase;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    padding: $nav-link-padding;
+  }
 }
 
 #page-heading {
-  text-align: center;
+  background: #000 url("../images/bg.jpg") no-repeat left center;
+  background-size: auto 100%;
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+@include media-breakpoint-up(md) {
+  #page-heading {
+    padding-bottom: 100px;
+  }
 }
 
 #main {
 
 }
 
+#content {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
 #footer {
-  border-top: 1px solid #EEE;
-  margin: 20px 0 0;
+  border-top: 1px solid $gray-lighter;
   padding: 65px 0;
   text-align: center;
+}
+
+#social-links {
+  font-size: 3rem;
+
+  a {
+    background-color: $gray;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    vertical-align: middle;
+    width: 3.5rem;
+
+    &:focus,
+    &:hover {
+      background-color: $brand-primary;
+      text-decoration: none;
+    }
+
+    i {
+      display: block;
+      font-size: 2rem;
+      line-height: 3.5rem;
+    }
+  }
 }
