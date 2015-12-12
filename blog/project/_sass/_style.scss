@@ -1,2 +1,21 @@
 @import "bootstrap-overrides";
 @import "bootstrap";
+
+#header {
+  background: gray;
+}
+
+#page-heading {
+  text-align: center;
+}
+
+#main {
+
+}
+
+#footer {
+  border-top: 1px solid #EEE;
+  margin: 20px 0 0;
+  padding: 65px 0;
+  text-align: center;
+}
