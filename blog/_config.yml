@@ -4,8 +4,11 @@ email: hello@jover.be
 description: ""
 baseurl: ""
 url: "http://blog.jover.be"
-twitter_username: jochenverdeyen
-github_username:  jover
+
+# Social
+github_username:   jover
+linkedin_username: jochenverdeyen
+twitter_username:  jochenverdeyen
 
 # Build settings
 markdown: kramdown
