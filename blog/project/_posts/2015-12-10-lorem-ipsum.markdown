@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
+title: "Lorem ipsum"
 subtitle: "This is the subtitle"
-date: 2015-12-11 22:05:15 +0100
+date: 2015-12-10 21:05:55 +0100
 tags:
 - lorem
-- ipsum
-- dolor sit amet
 ---
 Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.
 
