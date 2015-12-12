@@ -1,9 +1,9 @@
 # Site settings
-title: Jover Blog
+title: jover
 email: hello@jover.be
 description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jover.be"
+baseurl: ""
+url: "http://blog.jover.be"
 twitter_username: jochenverdeyen
 github_username:  jover
 
