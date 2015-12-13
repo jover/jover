@@ -1,17 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
 @import "bootstrap-overrides";
 @import "bootstrap";
 
 @import "../fonts/icomoon/style.css";
 
 #navigation {
-  a {
-    text-transform: uppercase;
-  }
-}
+  background: white;
+  z-index: 3;
 
-.navbar-nav {
-  .nav-link {
-    padding: $nav-link-padding;
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    .navbar-brand {
+      color: white;
+      padding: $nav-link-padding;
+
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: white;
+        padding: $nav-link-padding;
+
+        &:hover,
+        &:focus {
+          color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1170px) {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    &.is-fixed {
+      /* when the user scrolls down, we hide the header right above the viewport */
+      position: fixed;
+      top: -63px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid darken(white, 5%);
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+
+      .navbar-brand {
+        color: $gray-dark;
+        &:hover,
+        &:focus {
+          color: $brand-primary;
+        }
+      }
+
+      .navbar-nav {
+        .nav-link {
+          color: $gray-dark;
+
+          &:hover,
+          &:focus {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+
+    &.is-visible {
+      /* if the user changes the scrolling direction, we show the header */
+      -webkit-transform: translate3d(0, 100%, 0);
+      -moz-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      -o-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
   }
 }
 
@@ -22,6 +108,14 @@
   padding-bottom: 3rem;
   padding-top: 6rem;
   text-align: center;
+
+  h1, h2 {
+    font-family: $font-family-sans-serif;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
 
   .fa {
     margin-right: 0.75rem;

@@ -1,8 +1,39 @@
 ---
 layout: page
 title: Contact
+subtitle: Say hello!
 permalink: /contact/
-weight: 2
 ---
-
-This is the contact page.
+<form action="//formspree.io/hello@jover.be" method="POST">
+  <fieldset class="form-group row">
+    <label for="contact-text" class="col-sm-2 form-control-label">Name</label>
+    <div class="col-sm-10">
+      <input id="contact-text" type="text" name="name" class="form-control" placeholder="Enter your name" />
+    </div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <label for="contact-email" class="col-sm-2 form-control-label">Email</label>
+    <div class="col-sm-10">
+      <input id="contact-email" type="email" name="_replyto" class="form-control" placeholder="Enter you email address" />
+    </div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <label for="contact-subject" class="col-sm-2 form-control-label">Subject</label>
+    <div class="col-sm-10">
+      <input id="contact-subject" type="text" name="_subject" class="form-control" placeholder="Enter the subject" />
+    </div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <label for="contact-message" class="col-sm-2 form-control-label">Message</label>
+    <div class="col-sm-10">
+      <textarea id="contact-message" name="message" class="form-control" placeholder="Enter your message here..." rows="3"></textarea>
+    </div>
+  </fieldset>
+  <fieldset class="form-group row">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="hidden" name="_next" value="{{ site.url }}/contact/thank-you" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <button type="submit" value="Send" class="btn btn-primary">Send</button>
+    </div>
+  </fieldset>
+</form>

@@ -3,7 +3,7 @@ title: jover
 email: hello@jover.be
 description: ""
 baseurl: ""
-url: "http://blog.jover.be"
+url: "http://jover.be"
 
 # Social
 github_username:   jover
@@ -31,3 +31,12 @@ encoding: "UTF-8"
 
 # Excerpt separator
 excerpt_separator: <!--more-->
+
+# Navigation
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Contact
+  url: /contact/
