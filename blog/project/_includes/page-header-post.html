@@ -3,26 +3,36 @@
     <div class="row">
       <div class="col-sm-12">
         {% if page.title %}
-        <h1 itemprop="name headline">{{ page.title }}</h1>
+        <h1 id="page-title">{{ page.title }}</h1>
         {% endif %}
-
         {% if page.subtitle %}
-        <h2>{{ page.subtitle }}</h2>
+        <h2 id="page-subtitle">{{ page.subtitle }}</h2>
         {% endif %}
 
-        {% if page.date %}
-        <p class="post-meta"><i class="fa fa-calendar"></i><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if site.author %}<span class="invisible" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-        {% endif %}
-
-        {% if page.tags.size > 0 %}
-          {% if page.tags.size == 1 %}
-            <i class="fa fa-tag"></i>
-          {% else %}
-            <i class="fa fa-tags"></i>
+        {% if page.date || if page.tags.size > 0 %}
+        <div id="post-metadata">
+          {% if page.date %}
+          <p id="post-date"><i class="fa fa-calendar"></i><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
           {% endif %}
-          {% for tag in page.tags %}
-            <span class="post-tag">{{ tag }}</span>{% if forloop.last == false %}, {% endif %}
-          {% endfor %}
+
+          {% if page.tags.size > 0 %}
+            {% capture tags %}{% for tag in page.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endcapture %}
+
+            <p id="post-tags">
+              {% if page.tags.size == 1 %}
+                <i class="fa fa-tag"></i><span>{{ tags }}</span>
+              {% else %}
+                <i class="fa fa-tags"></i><span>{{ tags }}</span>
+              {% endif %}
+            </p>
+          {% endif %}
+
+          {% if page.comments %}
+            <p id="post-comments-count">
+              <i class="fa fa-comment"></i><a href="{{ page.url | prepend: site.baseurl }}#disqus_thread">Comments</a>
+            </p>
+          {% endif %}
+        </div>
         {% endif %}
       </div>
     </div>

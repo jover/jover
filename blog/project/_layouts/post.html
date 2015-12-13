@@ -3,18 +3,22 @@ layout: default
 ---
 <main id="main" role="main">
 
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post">
 
     {% include page-header-post.html %}
 
     <div id="content" class="container">
 
-      <div class="post-content" itemprop="articleBody">
+      <div class="post-content">
         {{ content }}
       </div>
 
     </div>
 
   </article>
+
+  {% if page.comments %}
+    {% include disqus.html %}
+  {% endif %}
 
 </main>

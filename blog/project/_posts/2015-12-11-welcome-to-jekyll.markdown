@@ -7,6 +7,7 @@ tags:
 - lorem
 - ipsum
 - dolor sit amet
+comments: true
 ---
 Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.
 <!--more-->

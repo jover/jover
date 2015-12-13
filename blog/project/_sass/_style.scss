@@ -19,13 +19,83 @@
   background: #000 url("../images/bg.jpg") no-repeat left center;
   background-size: auto 100%;
   color: white;
-  padding-bottom: 50px;
-  padding-top: 100px;
+  padding-bottom: 3rem;
+  padding-top: 6rem;
+  text-align: center;
+
+  .fa {
+    margin-right: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 @include media-breakpoint-up(md) {
   #page-heading {
-    padding-bottom: 100px;
+    padding-bottom: 6rem;
+  }
+}
+
+#page-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#page-subtitle {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1rem 0;
+}
+
+#page-title + #page-subtitle {
+  position: relative;
+
+  &:before {
+    border: 2px solid white;
+    border-radius: 2px;
+    content: "";
+    left: 40%;
+    position: absolute;
+    top: -2px;
+    width: 20%;
+  }
+}
+
+#post {
+  #page-heading {
+    text-align: left;
+  }
+
+  #page-title {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #page-subtitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  #page-title + #page-subtitle:before {
+    border: none;
+  }
+
+  #post-metadata {
+    margin-top: 2rem;
+  }
+
+  #post-comments-count {
+    a {
+      color: white;
+    }
   }
 }
 
@@ -33,15 +103,89 @@
 
 }
 
+.post-list {
+  article.post {
+    border-bottom: 1px solid $gray-lighter;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+    a {
+      color: $body-color;
+
+      &:hover {
+        text-decoration: none;
+
+        h2 {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .date {
+      margin-bottom: 0.25rem;
+    }
+
+    .excerpt {
+      position: relative;
+
+      &:before {
+        background: none; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(transparent, $body-bg); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(transparent, $body-bg); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(transparent, $body-bg); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(transparent, $body-bg); /* Standard syntax */
+        bottom: 0;
+        content: "";
+        height: 3rem;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+      }
+    }
+
+    .fa {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 #content {
   padding-bottom: 2rem;
   padding-top: 2rem;
+}
+
+#disqus_thread {
+  border-top: 1px solid $gray-lighter;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 #footer {
   border-top: 1px solid $gray-lighter;
   padding: 65px 0;
   text-align: center;
+}
+
+#copyright {
+  margin: 0;
+
+  a {
+    color: $body-color;
+
+    &:hover {
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+
+  .fa {
+    margin: 0 0.5rem;
+  }
 }
 
 #social-links {
