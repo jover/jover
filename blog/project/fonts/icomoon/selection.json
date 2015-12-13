@@ -17,15 +17,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 40,
+				"id": 0,
 				"order": 1,
 				"name": "tag",
 				"prevSize": 28,
 				"code": 61483
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 40
+			"setId": 2,
+			"iconIdx": 0
 		},
 		{
 			"icon": {
@@ -43,15 +43,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 41,
+				"id": 1,
 				"order": 2,
 				"name": "tags",
 				"prevSize": 28,
 				"code": 61484
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 41
+			"setId": 2,
+			"iconIdx": 1
 		},
 		{
 			"icon": {
@@ -69,15 +69,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 108,
+				"id": 2,
 				"order": 3,
 				"name": "calendar",
 				"prevSize": 28,
 				"code": 61555
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 108
+			"setId": 2,
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -95,15 +95,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 144,
+				"id": 3,
 				"order": 5,
 				"name": "twitter",
 				"prevSize": 28,
 				"code": 61593
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 144
+			"setId": 2,
+			"iconIdx": 3
 		},
 		{
 			"icon": {
@@ -121,15 +121,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 146,
+				"id": 4,
 				"order": 4,
 				"name": "github",
 				"prevSize": 28,
 				"code": 61595
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 146
+			"setId": 2,
+			"iconIdx": 4
 		},
 		{
 			"icon": {
@@ -148,15 +148,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 149,
+				"id": 5,
 				"order": 8,
 				"name": "feed, rss",
 				"prevSize": 28,
 				"code": 61598
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 149
+			"setId": 2,
+			"iconIdx": 5
 		},
 		{
 			"icon": {
@@ -174,15 +174,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 199,
+				"id": 6,
 				"order": 6,
 				"name": "linkedin",
 				"prevSize": 28,
 				"code": 61665
 			},
 			"setIdx": 0,
-			"setId": 1,
-			"iconIdx": 199
+			"setId": 2,
+			"iconIdx": 6
 		},
 		{
 			"icon": {
@@ -200,15 +200,41 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 385,
+				"id": 7,
 				"order": 7,
 				"name": "drupal",
 				"prevSize": 28,
 				"code": 61865
 			},
 			"setIdx": 0,
+			"setId": 2,
+			"iconIdx": 7
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1024 512q0 99.429-68.571 183.714t-186.286 133.143-257.143 48.857q-40 0-82.857-4.571-113.143 100-262.857 138.286-28 8-65.143 12.571-9.714 1.143-17.429-5.143t-10-16.571v-0.571q-1.714-2.286-0.286-6.857t1.143-5.714 2.571-5.429l3.429-5.143t4-4.857 4.571-5.143q4-4.571 17.714-19.714t19.714-21.714 17.714-22.571 18.571-29.143 15.429-33.714 14.857-43.429q-89.714-50.857-141.429-125.714t-51.714-160.571q0-74.286 40.571-142t109.143-116.857 163.429-78 198.857-28.857q139.429 0 257.143 48.857t186.286 133.143 68.571 183.714z"
+				],
+				"width": 1023.9973576860502,
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"comment"
+				],
+				"defaultCode": 61557,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"id": 110,
+				"order": 9,
+				"name": "comment",
+				"prevSize": 28,
+				"code": 61557
+			},
+			"setIdx": 1,
 			"setId": 1,
-			"iconIdx": 385
+			"iconIdx": 110
 		}
 	],
 	"height": 1024,
