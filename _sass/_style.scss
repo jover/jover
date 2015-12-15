@@ -248,6 +248,10 @@
   }
 }
 
+.pager-wrapper {
+  margin: 3rem 0 1rem;
+}
+
 #content {
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -266,6 +270,7 @@
 }
 
 #copyright {
+  font-size: 0.9rem;
   margin: 0;
 
   a {

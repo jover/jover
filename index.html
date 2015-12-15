@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Home
-permalink: /
+#permalink: / # Permalink may not be set - it breaks pagination
 ---
 <ul class="post-list list-unstyled">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li>
       <article class="post post-teaser">
-        <a href="{{ post.url | prepend: site.baseurl }}">
+        <a href="{{ post.url }}">
           <h2 class="post-title">{{ post.title }}</h2>
           <p class="post-date"><i class="fa fa-calendar"></i><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
           {% assign excerpt = post.excerpt | strip_html %}
@@ -19,3 +19,18 @@ permalink: /
     </li>
   {% endfor %}
 </ul>
+
+<nav class="pager-wrapper">
+  <ul class="pager">
+    {% if paginator.previous_page %}
+      <li class="pager-prev"><a href="{{ paginator.previous_page_path }}">Older</a></li>
+    {% else %}
+      <li class="pager-prev disabled"><a href="#">Older</a></li>
+    {% endif %}
+    {% if paginator.next_page %}
+      <li class="pager-next"><a href="{{ paginator.next_page_path }}">Newer</a></li>
+    {% else %}
+      <li class="pager-next disabled"><a href="#">Newer</a></li>
+    {% endif %}
+  </ul>
+</nav>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Lorem ipsum"
-subtitle: "This is the subtitle"
-date: 2015-12-10 21:05:55 +0100
+title: "Dolor"
+subtitle: "Sit"
+date: 2015-12-12 21:05:55 +0100
 tags:
 - lorem
 comments: false

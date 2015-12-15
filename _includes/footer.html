@@ -27,7 +27,7 @@
           {% endif %}
         </ul>
         <p id="copyright">
-          <span>Copyright &copy; <a href="{{ site.url }}">{{ site.url }}</a></span> &bull; <span class="rss-feed"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-feed"></i>Feed</a></span>
+          <span>Copyright &copy; <a href="{{ site.url }}">{{ site.url | replace: 'http://', '' }}</a></span> &bull; <span class="rss-feed"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-feed"></i>Feed</a></span>
         </p>
       </div>
     </div>

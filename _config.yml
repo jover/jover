@@ -3,7 +3,7 @@ title: jover
 email: hello@jover.be
 description: ""
 baseurl: ""
-url: "http://jover.be"
+url: "http://www.jover.be"
 
 # Social
 github_username:   jover
@@ -14,16 +14,23 @@ twitter_username:  jochenverdeyen
 markdown: kramdown
 
 # Excludes
-exclude: []
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "README"]
 
 # Includes
-include: [".htaccess"]
+include: []
 
 # Time Zone
 timezone: "Europe/Brussels"
 
 # Encoding
 encoding: "UTF-8"
+
+# Permalink
+permalink: pretty
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/:num/"
 
 # Excerpt separator
 excerpt_separator: <!--more-->
