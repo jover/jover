@@ -13,10 +13,6 @@ twitter_username:  jochenverdeyen
 # Build settings
 markdown: kramdown
 
-# Source & destination
-source: project
-destination: www
-
 # Excludes
 exclude: []
 

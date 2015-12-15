@@ -1,1 +1,21 @@
-Hello world!
+---
+layout: page
+title: Home
+permalink: /
+---
+<ul class="post-list list-unstyled">
+  {% for post in site.posts %}
+    <li>
+      <article class="post post-teaser">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p class="post-date"><i class="fa fa-calendar"></i><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+          {% assign excerpt = post.excerpt | strip_html %}
+          {% unless excerpt == blank %}
+          <p class="excerpt">{{ excerpt }}</p>
+          {% endunless %}
+        </a>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
