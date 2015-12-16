@@ -219,8 +219,12 @@
       margin: 0;
     }
 
-    .date {
+    .post-metadata {
       margin-bottom: 0.25rem;
+
+      span {
+        margin-right: 1rem;
+      }
     }
 
     .excerpt {
