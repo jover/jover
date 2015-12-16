@@ -1,0 +1,13 @@
+---
+layout: page
+title: Archive
+subtitle: Blog posts
+permalink: /archive/
+---
+<div class="list-group">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}" class="list-group-item">
+    {{ post.date | date_to_string }} &raquo; {{ post.title }}
+  </a>
+  {% endfor %}
+</div>
