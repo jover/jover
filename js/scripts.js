@@ -3,9 +3,9 @@ $(function() {
   var $window = $(window);
   var $navigation = $('#navigation');
 
-  $('img:not(.img-responsive)').addClass('img-responsive');
+  $('img:not(.img-fluid)').addClass('img-fluid');
 
-  var MQL = 1170;
+  var MQL = 768;
 
   // Navigation slide-in effect
   if ($window.width() > MQL) {
@@ -34,4 +34,4 @@ $(function() {
     );
   }
 
-})(jQuery);
+}(jQuery));
