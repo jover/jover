@@ -1,0 +1,24 @@
+{
+  "name": "jover",
+  "version": "0.0.1",
+  "description": "Personal Jekyll powered website.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jover@github.com/jover/jover.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jover/jover.github.io/issues"
+  },
+  "homepage": "https://github.com/jover/jover.github.io#readme"
+}
