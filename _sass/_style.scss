@@ -21,7 +21,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     background: transparent;
     border-bottom: 1px solid transparent;
     .navbar-brand {
@@ -47,7 +47,7 @@
     }
   }
 
-  @media only screen and (min-width: 1170px) {
+  @include media-breakpoint-up(lg) {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -102,12 +102,61 @@
 }
 
 #page-heading {
-  background: #000 url("../images/bg.jpg") no-repeat left center;
+  background: transparent url("../images/bg_head.png") no-repeat left center;
   background-size: auto 100%;
   color: white;
   padding-bottom: 3rem;
   padding-top: 6rem;
+  position: relative;
   text-align: center;
+
+  &:before {
+    background: #899096;
+    background: -moz-radial-gradient(center, ellipse cover, #a3a8ae 0%, #899096 10%, #899096 15%, transparent 60%);
+    background: -webkit-radial-gradient(center, ellipse cover, #a3a8ae 0%, #899096 10%, #899096 15%, transparent 60%);
+    background: radial-gradient(ellipse at center, #a3a8ae 0%, #899096 10%, #899096 15%, transparent 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#899096', endColorstr='#3a3b36', GradientType=1);
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: -40%;
+    width: 50%;
+    z-index: -1;
+  }
+
+  &:after {
+    background: #3a3b36;
+    background: -moz-linear-gradient(top, #3a3b36 0%, #33342f 56%, #060501 75%, #010103 100%);
+    background: -webkit-linear-gradient(top, #3a3b36 0%, #33342f 56%, #060501 75%, #010103 100%);
+    background: linear-gradient(to bottom, #3a3b36 0%, #33342f 56%, #060501 75%, #010103 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3b36', endColorstr='#010103', GradientType=0);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+
+  @include media-breakpoint-up(md) {
+    &:before {
+      height: 100%;
+      left: 20%;
+      top: -40%;
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &:before {
+      height: 100%;
+      left: 20%;
+      top: -40%;
+      width: 80%;
+    }
+  }
 
   h1, h2 {
     font-family: $font-family-sans-serif;
