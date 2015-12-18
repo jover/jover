@@ -40,7 +40,7 @@ gulp.task('compress', function() {
  * Place the IcoMoon/FontAwesome font files in the right place.
  */
 gulp.task('fonts', function() {
-  return gulp.src('./_assets/icomoon/fonts/**/*')
+  return gulp.src('./_assets/vendor/icomoon/fonts/**/*')
     .pipe(gulp.dest('./fonts'));
 });
 
