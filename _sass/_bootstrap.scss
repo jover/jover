@@ -1,50 +1,50 @@
 // Core variables and mixins
-@import "../_assets/bootstrap/variables";
-@import "../_assets/bootstrap/mixins";
+@import "../_assets/bootstrap/stylesheets/variables";
+@import "../_assets/bootstrap/stylesheets/mixins";
 
 // Reset and dependencies
-@import "../_assets/bootstrap/normalize";
-//@import "../_assets/bootstrap/print";
+@import "../_assets/bootstrap/stylesheets/normalize";
+//@import "../_assets/bootstrap/stylesheets/print";
 
 // Core CSS
-@import "../_assets/bootstrap/reboot";
-@import "../_assets/bootstrap/type";
-@import "../_assets/bootstrap/images";
-//@import "../_assets/bootstrap/code";
-@import "../_assets/bootstrap/grid";
-//@import "../_assets/bootstrap/tables";
-@import "../_assets/bootstrap/forms";
-@import "../_assets/bootstrap/buttons";
+@import "../_assets/bootstrap/stylesheets/reboot";
+@import "../_assets/bootstrap/stylesheets/type";
+@import "../_assets/bootstrap/stylesheets/images";
+//@import "../_assets/bootstrap/stylesheets/code";
+@import "../_assets/bootstrap/stylesheets/grid";
+//@import "../_assets/bootstrap/stylesheets/tables";
+@import "../_assets/bootstrap/stylesheets/forms";
+@import "../_assets/bootstrap/stylesheets/buttons";
 
 // Components
-//@import "../_assets/bootstrap/animation";
-//@import "../_assets/bootstrap/dropdown";
-//@import "../_assets/bootstrap/button-group";
-//@import "../_assets/bootstrap/input-group";
-//@import "../_assets/bootstrap/custom-forms";
-@import "../_assets/bootstrap/nav";
-@import "../_assets/bootstrap/navbar";
-//@import "../_assets/bootstrap/card";
-//@import "../_assets/bootstrap/breadcrumb";
-@import "../_assets/bootstrap/pagination";
-@import "../_assets/bootstrap/pager";
-//@import "../_assets/bootstrap/labels";
-//@import "../_assets/bootstrap/jumbotron";
-//@import "../_assets/bootstrap/alert";
-//@import "../_assets/bootstrap/progress";
-//@import "../_assets/bootstrap/media";
-@import "../_assets/bootstrap/list-group";
-//@import "../_assets/bootstrap/responsive-embed";
-//@import "../_assets/bootstrap/close";
+//@import "../_assets/bootstrap/stylesheets/animation";
+//@import "../_assets/bootstrap/stylesheets/dropdown";
+//@import "../_assets/bootstrap/stylesheets/button-group";
+//@import "../_assets/bootstrap/stylesheets/input-group";
+//@import "../_assets/bootstrap/stylesheets/custom-forms";
+@import "../_assets/bootstrap/stylesheets/nav";
+@import "../_assets/bootstrap/stylesheets/navbar";
+//@import "../_assets/bootstrap/stylesheets/card";
+//@import "../_assets/bootstrap/stylesheets/breadcrumb";
+@import "../_assets/bootstrap/stylesheets/pagination";
+@import "../_assets/bootstrap/stylesheets/pager";
+//@import "../_assets/bootstrap/stylesheets/labels";
+//@import "../_assets/bootstrap/stylesheets/jumbotron";
+//@import "../_assets/bootstrap/stylesheets/alert";
+//@import "../_assets/bootstrap/stylesheets/progress";
+//@import "../_assets/bootstrap/stylesheets/media";
+@import "../_assets/bootstrap/stylesheets/list-group";
+//@import "../_assets/bootstrap/stylesheets/responsive-embed";
+//@import "../_assets/bootstrap/stylesheets/close";
 
 // Components w/ JavaScript
-//@import "../_assets/bootstrap/modal";
-//@import "../_assets/bootstrap/tooltip";
-//@import "../_assets/bootstrap/popover";
-//@import "../_assets/bootstrap/carousel";
+//@import "../_assets/bootstrap/stylesheets/modal";
+//@import "../_assets/bootstrap/stylesheets/tooltip";
+//@import "../_assets/bootstrap/stylesheets/popover";
+//@import "../_assets/bootstrap/stylesheets/carousel";
 
 // Utility classes
-@import "../_assets/bootstrap/utilities";
-//@import "../_assets/bootstrap/utilities-background";
-//@import "../_assets/bootstrap/utilities-spacing";
-@import "../_assets/bootstrap/utilities-responsive";
+@import "../_assets/bootstrap/stylesheets/utilities";
+//@import "../_assets/bootstrap/stylesheets/utilities-background";
+//@import "../_assets/bootstrap/stylesheets/utilities-spacing";
+@import "../_assets/bootstrap/stylesheets/utilities-responsive";
