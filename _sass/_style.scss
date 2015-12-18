@@ -11,6 +11,7 @@
   z-index: 3;
 
   .navbar-brand {
+    color: $body-color;
     font-weight: bold;
   }
 
@@ -47,7 +48,7 @@
     }
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -126,11 +127,11 @@
   }
 
   &:after {
-    background: #3a3b36;
-    background: -moz-linear-gradient(top, #3a3b36 0%, #33342f 56%, #060501 75%, #010103 100%);
-    background: -webkit-linear-gradient(top, #3a3b36 0%, #33342f 56%, #060501 75%, #010103 100%);
-    background: linear-gradient(to bottom, #3a3b36 0%, #33342f 56%, #060501 75%, #010103 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3b36', endColorstr='#010103', GradientType=0);
+    background: #292A25;
+    background: -moz-linear-gradient(top, #292A25 0%, #33342f 56%, #060501 75%, #010103 100%);
+    background: -webkit-linear-gradient(top, #292A25 0%, #33342f 56%, #060501 75%, #010103 100%);
+    background: linear-gradient(to bottom, #292A25 0%, #33342f 56%, #060501 75%, #010103 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292A25', endColorstr='#010103', GradientType=0);
     content: "";
     height: 100%;
     left: 0;
@@ -142,18 +143,13 @@
 
   @include media-breakpoint-up(md) {
     &:before {
-      height: 100%;
       left: 20%;
-      top: -40%;
       width: 100%;
     }
   }
 
   @include media-breakpoint-up(lg) {
     &:before {
-      height: 100%;
-      left: 20%;
-      top: -40%;
       width: 80%;
     }
   }
