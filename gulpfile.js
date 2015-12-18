@@ -27,13 +27,13 @@ gulp.task('jekyll-build', ['bundle-install'], function (done) {
  */
 gulp.task('compress', function() {
   return gulp.src([
-    './_assets/bootstrap/js/util.js',
-    './_assets/bootstrap/js/collapse.js',
-    './js/scripts.js'
+    './_assets/vendor/bootstrap/js/util.js',
+    './_assets/vendor/bootstrap/js/collapse.js',
+    './_assets/js/scripts.js'
   ])
-    .pipe(concat('scripts.js'))
+    .pipe(concat('scripts.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./js/min'))
+    .pipe(gulp.dest('./js'))
 });
 
 /**
@@ -48,7 +48,7 @@ gulp.task('fonts', function() {
  * Watch files.
  */
 gulp.task('watch', function () {
-  gulp.watch(['_config.yml', '_includes/*.html', '_layouts/*.html', '_posts/*', '**/*.html', '_sass/**/*.sass', 'js/**/*', 'images/*'], ['jekyll-build']);
+  gulp.watch(['_config.yml', '_assets/**/*', '_includes/*.html', '_layouts/*.html', '_posts/*', '**/*.html', '_sass/**/*.sass', 'images/*'], ['jekyll-build']);
 });
 
 gulp.task('default', ['compress', 'fonts', 'watch']);
