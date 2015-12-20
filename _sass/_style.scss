@@ -8,16 +8,39 @@
 
 #navigation {
   background: white;
+  padding: 0;
   z-index: 3;
 
   .navbar-brand {
+    border: 1px solid transparent;
     color: $body-color;
     font-weight: bold;
+    line-height: 1.25rem;
+    padding: 0.5rem 0;
+  }
+
+  #navbar-nav {
+    clear: both;
+    margin: 0 ($grid-gutter-width / 2 * -1);
   }
 
   .navbar-nav {
+    border-top: 1px solid $body-color;
+    padding: 0.5rem 0;
+
+    .nav-item {
+      float: none;
+
+      & + .nav-item {
+        margin-left: 0;
+      }
+    }
+
     .nav-link {
+      color: $body-color;
       letter-spacing: 1px;
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
       text-transform: uppercase;
     }
   }
@@ -25,6 +48,7 @@
   @include media-breakpoint-up(md) {
     background: transparent;
     border-bottom: 1px solid transparent;
+
     .navbar-brand {
       color: white;
       padding: $nav-link-padding;
@@ -35,7 +59,19 @@
       }
     }
 
+    #navbar-nav {
+      clear: none;
+      margin: 0;
+    }
+
     .navbar-nav {
+      border: none;
+      padding: 0;
+
+      .nav-item {
+        float: left;
+      }
+
       .nav-link {
         color: white;
         padding: $nav-link-padding;
@@ -64,7 +100,7 @@
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
-      top: -63px;
+      top: -41px;
       background-color: rgba(255, 255, 255, 0.9);
       border-bottom: 1px solid darken(white, 5%);
       -webkit-transition: -webkit-transform 0.3s;

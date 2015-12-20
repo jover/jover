@@ -1,16 +1,22 @@
-<nav id="navigation" class="navbar navbar-dark navbar-full navbar-fixed-top" role="navigation">
-  <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-  <button type="button" class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" data-target="#navbar-nav">&#9776;</button>
-  <ul id="navbar-nav" class="nav navbar-nav pull-xs-right">
-    {% for link in site.navigation %}
-    {% assign active = nil %}
-    {% if page.url == link.url %}
-    {% assign active = true %}
-    {% endif %}
+<nav id="navigation" class="navbar navbar-full navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <button type="button" class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" data-target="#navbar-nav">&#9776;</button>
+    </div>
+    <div id="navbar-nav" class="collapse navbar-toggleable-sm">
+      <ul class="nav navbar-nav pull-md-right">
+        {% for link in site.navigation %}
+        {% assign active = nil %}
+        {% if page.url == link.url %}
+        {% assign active = true %}
+        {% endif %}
 
-    <li class="nav-item{% if active == true %} active{% endif %}">
-      <a class="nav-link" href="{{ link.url }}">{{ link.text }}{% if active == true %} <span class="sr-only">(current)</span>{% endif %}</a>
-    </li>
-    {% endfor %}
-  </ul>
+        <li class="nav-item{% if active == true %} active{% endif %}">
+          <a class="nav-link" href="{{ link.url }}">{{ link.text }}{% if active == true %} <span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>
