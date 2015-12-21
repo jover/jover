@@ -4,7 +4,7 @@
 @import "bootstrap-overrides";
 @import "bootstrap";
 
-@import "../_assets/vendor/icomoon/style";
+@import "../_assets/vendor/icomoon/style.scss";
 
 #navigation {
   background: white;
@@ -85,16 +85,8 @@
   }
 
   @include media-breakpoint-up(md) {
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     &.is-fixed {
@@ -103,8 +95,6 @@
       top: -41px;
       background-color: rgba(255, 255, 255, 0.9);
       border-bottom: 1px solid darken(white, 5%);
-      -webkit-transition: -webkit-transform 0.3s;
-      -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
 
       .navbar-brand {
@@ -128,11 +118,6 @@
     }
 
     &.is-visible {
-      /* if the user changes the scrolling direction, we show the header */
-      -webkit-transform: translate3d(0, 100%, 0);
-      -moz-transform: translate3d(0, 100%, 0);
-      -ms-transform: translate3d(0, 100%, 0);
-      -o-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
     }
   }
@@ -149,10 +134,7 @@
 
   &:before {
     background: #899096;
-    background: -moz-radial-gradient(center, ellipse cover, #a3a8ae 0%, #899096 10%, #899096 15%, transparent 60%);
-    background: -webkit-radial-gradient(center, ellipse cover, #a3a8ae 0%, #899096 10%, #899096 15%, transparent 60%);
     background: radial-gradient(ellipse at center, #a3a8ae 0%, #899096 10%, #899096 15%, transparent 60%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#899096', endColorstr='#3a3b36', GradientType=1);
     content: "";
     height: 100%;
     left: 50%;
@@ -164,10 +146,7 @@
 
   &:after {
     background: #292A25;
-    background: -moz-linear-gradient(top, #292A25 0%, #33342f 56%, #060501 75%, #010103 100%);
-    background: -webkit-linear-gradient(top, #292A25 0%, #33342f 56%, #060501 75%, #010103 100%);
     background: linear-gradient(to bottom, #292A25 0%, #33342f 56%, #060501 75%, #010103 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292A25', endColorstr='#010103', GradientType=0);
     content: "";
     height: 100%;
     left: 0;
@@ -313,9 +292,6 @@
 
       &:before {
         background: none; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(transparent, $body-bg); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(transparent, $body-bg); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(transparent, $body-bg); /* For Firefox 3.6 to 15 */
         background: linear-gradient(transparent, $body-bg); /* Standard syntax */
         bottom: 0;
         content: "";

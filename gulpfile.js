@@ -1,10 +1,12 @@
-"use strict";
+'use strict';
 
-var gulp   = require('gulp');
-//var sass   = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
 var cp     = require('child_process');
+var gulp   = require('gulp');
+var prefix = require('gulp-autoprefixer');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var sass   = require('gulp-sass');
+var uglify = require('gulp-uglify');
 
 /**
  * Bundle install.
@@ -20,6 +22,20 @@ gulp.task('bundle-install', function (done) {
 gulp.task('jekyll-build', ['bundle-install'], function (done) {
   return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
   .on('close', done);
+});
+
+/**
+ * SASS.
+ */
+gulp.task('sass', function () {
+  return gulp.src('_sass/style.scss')
+    .pipe(sass({
+      includePaths: ['sass'],
+      onError: sass.logError
+    }))
+    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(rename('./style.compiled.scss'))
+    .pipe(gulp.dest('./_sass'));
 });
 
 /**
@@ -51,4 +67,4 @@ gulp.task('watch', function () {
   gulp.watch(['_config.yml', '_assets/**/*', '_includes/*.html', '_layouts/*.html', '_posts/*', '**/*.html', '_sass/**/*.sass', 'images/*'], ['jekyll-build']);
 });
 
-gulp.task('default', ['compress', 'fonts', 'watch']);
+gulp.task('default', ['sass', 'compress', 'fonts', 'watch']);
