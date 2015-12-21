@@ -5,6 +5,10 @@ description: ""
 baseurl: ""
 url: "http://www.jover.be"
 
+# Gems
+gems:
+- jekyll-sitemap
+
 # Social
 drupal_username:   jover
 github_username:   jover
