@@ -64,7 +64,17 @@ gulp.task('fonts', function() {
  * Watch files.
  */
 gulp.task('watch', function () {
-  gulp.watch(['_config.yml', '_assets/**/*', '_includes/*.html', '_layouts/*.html', '_posts/*', '**/*.html', '_sass/**/*.sass', 'images/*'], ['jekyll-build']);
+  gulp.watch([
+    '_config.yml',
+    '_assets/**/*',
+    '_includes/*.html',
+    '_layouts/*.html',
+    '_posts/*',
+    '**/*.html',
+    '_sass/**/*.scss',
+    '!_sass/style.compiled.scss',
+    'images/*'
+  ], ['jekyll-build']);
 });
 
 gulp.task('default', ['sass', 'compress', 'fonts', 'watch']);
