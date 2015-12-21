@@ -74,7 +74,7 @@ gulp.task('watch', function () {
     '_sass/**/*.scss',
     '!_sass/style.compiled.scss',
     'images/*'
-  ], ['jekyll-build']);
+  ], ['sass', 'compress', 'fonts', 'jekyll-build']);
 });
 
-gulp.task('default', ['sass', 'compress', 'fonts', 'watch']);
+gulp.task('default', ['sass', 'compress', 'fonts', 'jekyll-build', 'watch']);
