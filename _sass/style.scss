@@ -257,8 +257,25 @@
   }
 }
 
-#main {
+#main {}
 
+.page-home {
+  #page-title {
+    display: none;
+  }
+
+  #intro {
+    font-family: $font-family-serif;
+    font-size: 1.5rem;
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .post-list {

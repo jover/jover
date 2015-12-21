@@ -2855,6 +2855,17 @@ a.text-danger:focus, a.text-danger:hover {
 #post #post-comments-count a {
   color: white; }
 
+.page-home #page-title {
+  display: none; }
+
+.page-home #intro {
+  font-family: Lora, "Times New Roman", serif;
+  font-size: 1.5rem; }
+  .page-home #intro a {
+    color: white; }
+    .page-home #intro a:hover {
+      text-decoration: underline; }
+
 .post-list article.post {
   border-bottom: 1px solid #eceeef;
   margin-bottom: 2rem;
