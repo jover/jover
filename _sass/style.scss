@@ -292,7 +292,7 @@
 
       &:before {
         background: none; /* For browsers that do not support gradients */
-        background: linear-gradient(transparent, $body-bg); /* Standard syntax */
+        background: linear-gradient(rgba($body-bg, 0), rgba($body-bg, 1)); /* Standard syntax */
         bottom: 0;
         content: "";
         height: 3rem;
