@@ -2762,7 +2762,7 @@ a.text-danger:focus, a.text-danger:hover {
   background-size: auto 100%;
   color: white;
   padding-bottom: 3rem;
-  padding-top: 6rem;
+  padding-top: 4rem;
   position: relative;
   text-align: center; }
   #page-heading:before {
@@ -2806,7 +2806,9 @@ a.text-danger:focus, a.text-danger:hover {
 
 @media (min-width: 768px) {
   #page-heading {
-    padding-bottom: 6rem; } }
+    padding-bottom: 4rem; }
+  #post #page-heading {
+    padding-bottom: 2.5rem; } }
 
 #page-title {
   font-size: 5rem;
