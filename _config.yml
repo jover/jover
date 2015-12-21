@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://www.jover.be"
 
 # Social
+drupal_username:   jover
 github_username:   jover
 linkedin_username: jochenverdeyen
 twitter_username:  jochenverdeyen

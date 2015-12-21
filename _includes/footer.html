@@ -25,6 +25,13 @@
             </a>
           </li>
           {% endif %}
+          {% if site.github_username %}
+          <li class="list-inline-item">
+            <a href="https://www.drupal.org/u/{{ site.drupal_username }}">
+              <i class="fa fa-drupal"></i>
+            </a>
+          </li>
+          {% endif %}
         </ul>
         <p id="copyright">
           <span>Copyright &copy; <a href="{{ site.url }}">{{ site.url | replace: 'http://', '' }}</a></span> &bull; <span class="rss-feed"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-feed"></i>Feed</a></span>
