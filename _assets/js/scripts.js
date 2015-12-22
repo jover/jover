@@ -32,6 +32,24 @@ $(function() {
         this.previousTop = currentTop;
       }
     );
+
+    $window.on('touchmove', function(e) {
+      var currentTop = $window.scrollTop();
+      // Check scrolling up action
+      if (currentTop < this.previousTop) {
+        // When scrolling up...
+        if (currentTop > 0 && $navigation.hasClass('is-fixed')) {
+          $navigation.addClass('is-visible');
+        } else {
+          $navigation.removeClass('is-visible is-fixed');
+        }
+      } else {
+        // When scrolling down...
+        $navigation.removeClass('is-visible');
+        if (currentTop > headerHeight && !$navigation.hasClass('is-fixed')) $navigation.addClass('is-fixed');
+      }
+      this.previousTop = currentTop;
+    });
   }
 
 }(jQuery));
