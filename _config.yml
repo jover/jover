@@ -19,7 +19,7 @@ twitter_username:  jochenverdeyen
 markdown: kramdown
 
 # Excludes
-exclude: ["node_modules", "CNAME", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README"]
+exclude: ["images/*.psd", "node_modules", "CNAME", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README"]
 
 # Includes
 include: []
