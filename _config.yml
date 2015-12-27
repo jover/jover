@@ -46,7 +46,7 @@ navigation:
   url: /
 #- text: About
 #  url: /about/
-- text: Archive
-  url: /archive/
+#- text: Archive
+#  url: /archive/
 - text: Contact
   url: /contact/
