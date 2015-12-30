@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Disallow: /2015/12/21/sample-blog-post/
+Disallow: /2015/12/21/sample-blog-post/index.html
