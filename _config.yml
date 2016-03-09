@@ -17,6 +17,11 @@ twitter_username:  jochenverdeyen
 
 # Build settings
 markdown: kramdown
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Excludes
 exclude: ["images/*.psd", "node_modules", "CNAME", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README"]
