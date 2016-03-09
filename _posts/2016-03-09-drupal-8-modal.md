@@ -19,7 +19,7 @@ The very popular [Views](https://www.drupal.org/project/views) module relied hea
 The Modal API is a good example of this.
 You can try out some [example code](https://github.com/jover/drupal-8-modal-example/) directly or read further how to create a basic implementation of a dialog.
 
-Of course you must start creating a new module (let's say _modal-example_) by creating a module folder.
+Of course you must start creating a new module (let's say _modal\_example_) by creating a module folder.
 Contrary to Drupal 7, a _.module_ file is not longer required, so proceed with creating the **modal_example.info.yml** file.
 
 {% highlight yaml linenos %}
