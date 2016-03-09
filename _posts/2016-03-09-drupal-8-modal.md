@@ -2,7 +2,7 @@
 layout: post
 title: "Drupal 8's Modal API"
 subtitle: "Creating a simple dialog by example..."
-date: 2016-03-09 20:00:00 +0100
+date: 2016-03-09 18:00:00 +0100
 tags:
 - drupal
 - drupal 8
