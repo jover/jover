@@ -2,8 +2,7 @@
 title: jover
 email: hello@jover.be
 description: ""
-baseurl: ""
-url: "http://www.jover.be"
+baseurl: "http://www.jover.be"
 
 # Gems
 gems:
