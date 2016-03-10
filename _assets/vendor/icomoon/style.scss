@@ -1,79 +1,74 @@
 @import "variables";
 
 @font-face {
-    font-family: 'font-awesome';
-    src:    url('#{$icomoon-font-path}/font-awesome.eot?r3ozng');
-    src:    url('#{$icomoon-font-path}/font-awesome.eot?r3ozng#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/font-awesome.ttf?r3ozng') format('truetype'),
-        url('#{$icomoon-font-path}/font-awesome.woff?r3ozng') format('woff'),
-        url('#{$icomoon-font-path}/font-awesome.svg?r3ozng#font-awesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'font-awesome';
+	src:url('../fonts/font-awesome.eot?xjql1p');
+	src:url('../fonts/font-awesome.eot?xjql1p#iefix') format('embedded-opentype'),
+		url('../fonts/font-awesome.ttf?xjql1p') format('truetype'),
+		url('../fonts/font-awesome.woff?xjql1p') format('woff'),
+		url('../fonts/font-awesome.svg?xjql1p#font-awesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .fa {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'font-awesome' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+	font-family: 'font-awesome' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .fa-tag {
-    &:before {
-        content: $fa-tag;
-    }
+	&:before {
+		content: $fa-tag;
+	}
 }
 .fa-tags {
-    &:before {
-        content: $fa-tags;
-    }
+	&:before {
+		content: $fa-tags;
+	}
 }
 .fa-calendar {
-    &:before {
-        content: $fa-calendar;
-    }
+	&:before {
+		content: $fa-calendar;
+	}
 }
 .fa-twitter {
-    &:before {
-        content: $fa-twitter;
-    }
+	&:before {
+		content: $fa-twitter;
+	}
 }
 .fa-github {
-    &:before {
-        content: $fa-github;
-    }
+	&:before {
+		content: $fa-github;
+	}
 }
 .fa-feed {
-    &:before {
-        content: $fa-feed;
-    }
+	&:before {
+		content: $fa-feed;
+	}
 }
 .fa-rss {
-    &:before {
-        content: $fa-rss;
-    }
+	&:before {
+		content: $fa-rss;
+	}
 }
 .fa-linkedin {
-    &:before {
-        content: $fa-linkedin;
-    }
+	&:before {
+		content: $fa-linkedin;
+	}
 }
 .fa-drupal {
-    &:before {
-        content: $fa-drupal;
-    }
-}
-.fa-comment {
-    &:before {
-        content: $fa-comment;
-    }
+	&:before {
+		content: $fa-drupal;
+	}
 }
 

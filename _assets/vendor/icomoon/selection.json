@@ -24,7 +24,7 @@
 				"code": 61483
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 0
 		},
 		{
@@ -50,7 +50,7 @@
 				"code": 61484
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 1
 		},
 		{
@@ -76,7 +76,7 @@
 				"code": 61555
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 2
 		},
 		{
@@ -102,7 +102,7 @@
 				"code": 61593
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 3
 		},
 		{
@@ -128,7 +128,7 @@
 				"code": 61595
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 4
 		},
 		{
@@ -155,7 +155,7 @@
 				"code": 61598
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 5
 		},
 		{
@@ -181,7 +181,7 @@
 				"code": 61665
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 6
 		},
 		{
@@ -207,7 +207,7 @@
 				"code": 61865
 			},
 			"setIdx": 0,
-			"setId": 3,
+			"setId": 2,
 			"iconIdx": 7
 		},
 		{
@@ -226,15 +226,15 @@
 			},
 			"attrs": [],
 			"properties": {
-				"id": 8,
+				"id": 110,
 				"order": 9,
 				"name": "comment",
 				"prevSize": 28,
 				"code": 61557
 			},
-			"setIdx": 0,
-			"setId": 3,
-			"iconIdx": 8
+			"setIdx": 1,
+			"setId": 1,
+			"iconIdx": 110
 		}
 	],
 	"height": 1024,

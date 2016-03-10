@@ -1,57 +1,57 @@
 @font-face {
-    font-family: 'font-awesome';
-    src:    url('fonts/font-awesome.eot?r3ozng');
-    src:    url('fonts/font-awesome.eot?r3ozng#iefix') format('embedded-opentype'),
-        url('fonts/font-awesome.ttf?r3ozng') format('truetype'),
-        url('fonts/font-awesome.woff?r3ozng') format('woff'),
-        url('fonts/font-awesome.svg?r3ozng#font-awesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'font-awesome';
+	src:url('fonts/font-awesome.eot?r4mgvg');
+	src:url('fonts/font-awesome.eot?r4mgvg#iefix') format('embedded-opentype'),
+		url('fonts/font-awesome.ttf?r4mgvg') format('truetype'),
+		url('fonts/font-awesome.woff?r4mgvg') format('woff'),
+		url('fonts/font-awesome.svg?r4mgvg#font-awesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .fa {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'font-awesome' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+	font-family: 'font-awesome' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .fa-tag:before {
-    content: "\f02b";
+	content: "\f02b";
 }
 .fa-tags:before {
-    content: "\f02c";
+	content: "\f02c";
 }
 .fa-calendar:before {
-    content: "\f073";
+	content: "\f073";
 }
 .fa-twitter:before {
-    content: "\f099";
+	content: "\f099";
 }
 .fa-github:before {
-    content: "\f09b";
+	content: "\f09b";
 }
 .fa-feed:before {
-    content: "\f09e";
+	content: "\f09e";
 }
 .fa-rss:before {
-    content: "\f09e";
+	content: "\f09e";
 }
 .fa-linkedin:before {
-    content: "\f0e1";
+	content: "\f0e1";
 }
 .fa-drupal:before {
-    content: "\f1a9";
+	content: "\f1a9";
 }
 .fa-comment:before {
-    content: "\f075";
+	content: "\f075";
 }
 
