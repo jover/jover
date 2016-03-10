@@ -2665,8 +2665,8 @@ a.text-danger:focus, a.text-danger:hover {
 
 @font-face {
   font-family: 'font-awesome';
-  src: url("../fonts/font-awesome.eot?xjql1p");
-  src: url("../fonts/font-awesome.eot?xjql1p#iefix") format("embedded-opentype"), url("../fonts/font-awesome.ttf?xjql1p") format("truetype"), url("../fonts/font-awesome.woff?xjql1p") format("woff"), url("../fonts/font-awesome.svg?xjql1p#font-awesome") format("svg");
+  src: url("../fonts/font-awesome.eot?adqlhi");
+  src: url("../fonts/font-awesome.eot?adqlhi#iefix") format("embedded-opentype"), url("../fonts/font-awesome.ttf?adqlhi") format("truetype"), url("../fonts/font-awesome.woff?adqlhi") format("woff"), url("../fonts/font-awesome.svg?adqlhi#font-awesome") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2709,6 +2709,9 @@ a.text-danger:focus, a.text-danger:hover {
 
 .fa-drupal:before {
   content: ""; }
+
+.fa-comment:before {
+  content: ""; }
 
 .highlight {
   background: #ffffff;
