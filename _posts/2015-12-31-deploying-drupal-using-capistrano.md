@@ -8,6 +8,7 @@ tags:
 - capistrano
 - deploying
 - talk
+comments: true
 ---
 Deploying Drupal websites can be a hassle when you have multiple environments to maintain.
 Therefore it's a good idea to automate your deployment process.

@@ -9,6 +9,7 @@ tags:
 - ctools
 - modals
 - dialogs
+comments: true
 ---
 Using Drupal 7, the contributed module [CTools](https://drupal.org/project/ctools) provided the ability to implement dialogs, even with a fallback when JavaScript was not enabled, allowing a graceful degradation.
 
