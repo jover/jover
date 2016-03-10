@@ -2916,7 +2916,7 @@ a.text-danger:focus, a.text-danger:hover {
   .highlight .lineno {
     border-right: 1px solid #ccc;
     color: #ccc;
-    display: inline-block;
+    margin: 0 8px 0 0;
     padding: 0 5px;
     /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
     -webkit-user-select: none;
